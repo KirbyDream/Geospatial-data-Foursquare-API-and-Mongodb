@@ -26,7 +26,7 @@ After some cleaning, now we have a data frame with all the potential locations a
 
 <img width="344" alt="clean_dataset" src="images/clean_dataset.png">
 
-
+ ## 2. Transforming Data:
   - Second step of filtering.
 For the second filter we are going to be using APi queries from foursquare to narrow down our dataframe, and get a final dataframe with only companies that meet our conditions:  
 -- We are creating new columns for each amenity we need around our office( with their number)  
@@ -34,13 +34,34 @@ For the second filter we are going to be using APi queries from foursquare to na
 -- For that matter we will be creating additional column for each amenity with their number(how many are there) 
 -- We are also adding 2 columns, one for total number of amenities, and one we are going to call density, where we use a coefficient to weigh the importance and prioritize amenities.
 
-insert dataframe
+<img width="729" alt="density" src="images/density.png">
+
 
 The density column is going to be used later on to choose the the location with the most number of amenities, but first let's use a heatmap to locate the place with the most number of companies, since we want our office to be around successful companies. noting that in our data set we already filtred the companies that had raised more than 10M$.
 
 <img width="725" alt="world_heatmap" src="images/world_heatmap.png">
 
+It looks like we're going to New York !
 
+Now, using the density feature, we are going to sort the data set in an descending order, because we are looking for the place we the most number of amenities.
+
+<img width="735" alt="top5" src="images/top5.png">
+
+Now that we have our data set filtered and saved into csv file, containing top 5 locations in New York, we going to the last step : Visualization.
+
+ ## 2. Visualization :
+ We want our company to be near :   
+ 
+   -- Other succesful design companies  
+   -- Starbucks cafés   
+   -- Bars   
+   -- Transportation    
+   -- School for kids   
+   -- Vegan restaurants    
+   -- Pet grooming place    
+ and by now we have all that in our clean data frame, which going to be plotted on a map 
+ 
+ <img width="916" alt="NY_map" src="images/NY_map.png">
 
 
 
