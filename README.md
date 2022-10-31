@@ -49,7 +49,7 @@ Now, using the density feature, we are going to sort the data set in an descendi
 
 Now that we have our data set filtered and saved into csv file, containing top 5 locations in New York, we going to the last step : Visualization.
 
- ## 2. Visualization :
+ ## 3. Visualization :
  We want our company to be near :   
  
    -- Other succesful design companies  
@@ -63,6 +63,8 @@ Now that we have our data set filtered and saved into csv file, containing top 5
  
  <img width="916" alt="NY_map" src="images/NY_map.png">
 
+## Conclusion :
 
-The optimal location for the new company's office is here --> The coordinates = ("40.751892", "-73.987592")
+The optimal location for the new company's office is here --> The coordinates = ("40.751892", "-73.987592")   
+
 We are stealing "Optimum Energy" venue!
